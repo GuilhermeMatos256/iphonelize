@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>IPHONELIZE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+
+    <!--stilos css-->
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
+    <link rel="stylesheet" href="assets/resources/styles/style.css">
+    <!--Jquery-->
+    <script src="assets/libraries/jquery/jquery-2.2.4.min.js"></script>
+    <!--materialize JS-->
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+    <!--JS-->
+    <script src="assets/resources/scripts/common.js"></script>
+
+
+    <script>
+        $(function() {
+            $("#footer").load("footer.html");
+            $("#menu").load("nav.html");
+            $("#mobile").load("nav-cell.html");
+        });
+
+    </script>
+</head>
+
+<body>
+    <!--MENU-->
+    <div id="menu"></div>
+    <!--MENU CELULAR-->
+    <ul class="sidenav" id="mobile"></ul>
+    <!--CONTEUDO-->
+    <main class="container">
+        <div>
+            <h1 class="center">Cadastro</h1>
+        </div>
+        <form action="" class="col s12 m6 l6">
+            <div class="row">
+                <div class="col s12 l6">
+                    <label for="">Nome:</label>
+                    <input type="text" pattern="">
+                </div>
+                <div class="col s12 l6">
+                    <label for="">Sobrenome:</label>
+                    <input id="" type="text" pattern="">
+                </div>
+                <div class="col s12 l6">
+                    <label for="">Data de nascimento</label>
+                    <input id="" type="date" min="" max="" class="validate">
+                </div>
+                <div class="col s12 l6">
+                    <div><label for="">Genero:</label>
+                        <div>
+                            <input class="with-gap" name="genero" type="radio" />
+                            <span>Masculino</span>
+
+                            <input class="with-gap" name="genero" type="radio" />
+                            <span>Feminino</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col s12 l12">
+                    <label for="">E-mail:</label>
+                    <input id="" type="text" pattern="">
+                </div>
+                <div class="col s12 l12">
+                    <label for="">Senha:</label>
+                    <input id="" type="text" pattern="">
+                </div>
+                <div class="col s12 l12">
+                    <label for="">Confirme sua senha:</label>
+                    <input id="" type="text" pattern="">
+                </div>
+                <div class="col s12 l6">
+                    <label for="">CPF:</label>
+                    <input id="" type="number" max="">
+                </div>
+                <div class="col s12 l6">
+                    <label for="">CEP:</label>
+                    <input id="" type="number" max="">
+                </div>
+                <div class="col s12 l6">
+                    <label for="">Estado:</label>
+                    <input id="" type="text" max="2">
+                </div>
+                <div class="col s12 l6">
+                    <label for="">Cidade:</label>
+                    <input id="" type="text" max="2">
+                </div>
+                <div class="col s12 l6">
+                    <label for="">Bairro:</label>
+                    <input id="" type="text" max="2">
+                </div>
+                <div class="col s12 l6">
+                    <label for="">numero</label>
+                    <input id="" type="number" pattern="\(\d{3}\)\s?\d{4}-\d{4,5}">
+                </div>
+
+
+
+            </div>
+            <button class="center" type="submit">Cadastrar-se</button>
+        </form>
+
+
+    </main>
+
+    <!--RODAPÉ-->
+    <div id="footer" class="black"></div>
+
+</body>
+
+</html>
