@@ -11,7 +11,7 @@ Qualidade do código
 
 Caixas de Diálogo
 - [ ] prompt
-- [ ] alert
+- [x] alert
 - [ ] confirm
 
 Temporizadores
