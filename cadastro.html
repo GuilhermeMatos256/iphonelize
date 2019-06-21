@@ -23,12 +23,11 @@
 
 
     <script>
-        $(function() {
+        $(function () {
             $("#footer").load("footer.html");
             $("#menu").load("nav.html");
             $("#mobile").load("nav-cell.html");
         });
-
     </script>
 </head>
 
@@ -42,67 +41,78 @@
         <div>
             <h1 class="center">Cadastro</h1>
         </div>
-        <form action="" class="col s12 m6 l6">
+        <form action="" class="col s12 m6 l6" id="form-cadastro">
             <div class="row">
                 <div class="col s12 l6">
                     <label for="">Nome:</label>
-                    <input type="text" pattern="">
+                    <input type="text" id="input-nome" pattern="">
                 </div>
                 <div class="col s12 l6">
                     <label for="">Sobrenome:</label>
-                    <input id="" type="text" pattern="">
+                    <input id="" type="text" id="input-sobrenome" pattern="">
                 </div>
                 <div class="col s12 l6">
                     <label for="">Data de nascimento</label>
-                    <input id="" type="date" min="" max="" class="validate">
+                    <input id="" type="date" id="input-data" min="" max="" class="validate">
                 </div>
                 <div class="col s12 l6">
                     <div><label for="">Genero:</label>
-                        <div>
-                            <input class="with-gap" name="genero" type="radio" />
-                            <span>Masculino</span>
-
-                            <input class="with-gap" name="genero" type="radio" />
-                            <span>Feminino</span>
+                        <div id="radio-genero">
+                            <label>
+                                <input class="with-gap" name="genero" type="radio" />
+                                <span>Masculino</span>
+                            </label>
+                            <label>
+                                <input class="with-gap" name="genero" type="radio" />
+                                <span>Feminino</span>
+                            </label>
                         </div>
 
                     </div>
                 </div>
                 <div class="col s12 l12">
                     <label for="">E-mail:</label>
-                    <input id="" type="text" pattern="">
+                    <input id="input-email" type="text" pattern="">
                 </div>
                 <div class="col s12 l12">
                     <label for="">Senha:</label>
-                    <input id="" type="text" pattern="">
+                    <input id="input-senha" type="password" pattern="">
                 </div>
                 <div class="col s12 l12">
                     <label for="">Confirme sua senha:</label>
-                    <input id="" type="text" pattern="">
+                    <input id="input-confirm-senha" type="password" pattern="">
                 </div>
                 <div class="col s12 l6">
                     <label for="">CPF:</label>
-                    <input id="" type="number" max="">
+                    <input id="input-cpf" type="number" max="">
+                </div>
+                <div class="col s12 l6">
+                    <label for="">Numero de Telefone:</label>
+                    <input id="input-telefone" type="number" max="">
                 </div>
                 <div class="col s12 l6">
                     <label for="">CEP:</label>
-                    <input id="" type="number" max="">
+                    <input id="input-cep" type="number" max="">
                 </div>
                 <div class="col s12 l6">
                     <label for="">Estado:</label>
-                    <input id="" type="text" max="2">
+                    <input id="input-estado" type="text" max="2">
                 </div>
                 <div class="col s12 l6">
                     <label for="">Cidade:</label>
-                    <input id="" type="text" max="2">
+                    <input id="input-cidade" type="text">
                 </div>
                 <div class="col s12 l6">
                     <label for="">Bairro:</label>
-                    <input id="" type="text" max="2">
+                    <input id="input-bairro" type="text">
                 </div>
                 <div class="col s12 l6">
-                    <label for="">numero</label>
-                    <input id="" type="number" pattern="\(\d{3}\)\s?\d{4}-\d{4,5}">
+                        <label for="">Rua:</label>
+                        <input id="input-rua" type="text">
+                    </div>
+                <div class="col s12 l6">
+                    <label for="">Numero</label>
+                    <input id="input-numero" type="number" pattern="\(\d{3}\)\s?\d{4}-\d{4,5}">
                 </div>
 
 
@@ -117,6 +127,7 @@
     <!--RODAPÉ-->
     <div id="footer" class="black"></div>
 
+    <script src="assets/resources/scripts/cadastro.js"></script>
 </body>
 
 </html>
