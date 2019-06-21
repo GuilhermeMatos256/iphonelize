@@ -1,10 +1,16 @@
 /*
 	Geral
 */
+(function () {
 
-$(document).ready(function () {
-    $(".sidenav").sidenav();
-    $('.datepicker').datepicker();
-    //$('.collapsible').collapsible();
-    $('select').formSelect();
-});
+    'use strict';
+
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+        $('.datepicker').datepicker();
+        //$('.collapsible').collapsible();
+        $('select').formSelect();
+    });
+
+    
+})();
