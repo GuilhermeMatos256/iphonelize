@@ -70,8 +70,8 @@ Objetos
 - [ ] Usar herança prototipal nativa ou herança de classes do ES6
 
 jQuery
-- [ ] Uso de seletores CSS - id, classe e tag
-- [ ] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
+- [x] Uso de seletores CSS - id, classe e tag ?
+- [x] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo ?
 - [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
 - [ ] Efeitos fade ou slide
 - [ ] Especificar o tratador de algum evento via jQuery
