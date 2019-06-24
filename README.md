@@ -77,7 +77,7 @@ jQuery
 - [ ] Especificar o tratador de algum evento via jQuery
 - [ ] Manipulação do CSS via função css() e addClass()/removeClass()
 - [ ] Manipulação do conteúdo de um input e div usando jQuery
-- [ ] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
+- [x] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
 
 Web Storage
 - [x] LocalStorage ou SessionStorage
