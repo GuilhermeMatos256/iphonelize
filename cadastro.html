@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png" />
 
-    <!--Import Google Icon Font-->
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
 
@@ -16,6 +15,7 @@
     <link rel="stylesheet" href="assets/resources/styles/style.css">
     <!--Jquery-->
     <script src="assets/libraries/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/libraries/jquery/jquery.mask.js"></script>
     <!--materialize JS-->
     <script src="assets/libraries/materialize/js/materialize.js"></script>
     <!--JS-->
@@ -45,25 +45,27 @@
             <div class="row">
                 <div class="col s12 l6">
                     <label for="">Nome:</label>
-                    <input type="text" id="input-nome" pattern="">
+                    <input type="text" id="input-nome" class="validate" pattern="^[A-Z][a-zà-ú]{1,}(\s([A-Z][a-zà-ú]{1,}))*$" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Sobrenome:</label>
-                    <input id="" type="text" id="input-sobrenome" pattern="">
+                    <input id="input-sobrenome" type="text"
+                        pattern="^[A-Z][a-zà-ú]{2,}(\s((d[aeiou])|([A-Z][a-zà-ú]{1,})))*$" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Data de nascimento</label>
-                    <input id="" type="date" id="input-data" min="" max="" class="validate">
+                    <input id="input-data" type="date" min="1900-01-01" max="2010-12-31" class="validate"
+                        required>
                 </div>
                 <div class="col s12 l6">
                     <div><label for="">Genero:</label>
-                        <div id="radio-genero">
+                        <div id="radio-genero" required>
                             <label>
-                                <input class="with-gap" name="genero" type="radio" />
+                                <input class="with-gap black" name="genero" type="radio" />
                                 <span>Masculino</span>
                             </label>
                             <label>
-                                <input class="with-gap" name="genero" type="radio" />
+                                <input class="with-gap black" name="genero" type="radio" />
                                 <span>Feminino</span>
                             </label>
                         </div>
@@ -72,53 +74,85 @@
                 </div>
                 <div class="col s12 l12">
                     <label for="">E-mail:</label>
-                    <input id="input-email" type="text" pattern="">
+                    <input id="input-email" type="email" pattern="^(\w+\.)?\w+@\w+\.(\w+\.)?\w{3}(\.\w{2})?" required>
                 </div>
                 <div class="col s12 l12">
                     <label for="">Senha:</label>
-                    <input id="input-senha" type="password" pattern="">
+                    <input id="input-senha" type="password" min="8" max="50" required>
                 </div>
                 <div class="col s12 l12">
                     <label for="">Confirme sua senha:</label>
-                    <input id="input-confirm-senha" type="password" pattern="">
+                    <input id="input-confirm-senha" type="password" min="8" max="50" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">CPF:</label>
-                    <input id="input-cpf" type="number" max="">
+                    <input id="input-cpf" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Numero de Telefone:</label>
-                    <input id="input-telefone" type="number" max="">
+                    <input id="input-telefone" pattern="^\(\d{2}\)\s\d{5}-\d{4}$" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">CEP:</label>
-                    <input id="input-cep" type="number" max="">
+                    <input id="input-cep" max="\d{5}-\d{3}" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Estado:</label>
-                    <input id="input-estado" type="text" max="2">
+                    <select id="input-estado" required>
+                        <option value="" disabled selected>Escolha um Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="ET">Estrangeiro</option>
+                    </select>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Cidade:</label>
-                    <input id="input-cidade" type="text">
+                    <input id="input-cidade" type="text" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Bairro:</label>
-                    <input id="input-bairro" type="text">
+                    <input id="input-bairro" type="text" required>
                 </div>
                 <div class="col s12 l6">
-                        <label for="">Rua:</label>
-                        <input id="input-rua" type="text">
-                    </div>
+                    <label for="">Rua:</label>
+                    <input id="input-rua" type="text" required>
+                </div>
                 <div class="col s12 l6">
                     <label for="">Numero</label>
-                    <input id="input-numero" type="number" pattern="\(\d{3}\)\s?\d{4}-\d{4,5}">
+                    <input id="input-numero" type="number" required>
                 </div>
 
 
 
             </div>
-            <button class="center" type="submit">Cadastrar-se</button>
+            <div class="col center">
+                <button class="col waves-effect waves-light btn-large black" type="submit">Cadastrar-se</button>
+            </div>
         </form>
 
 

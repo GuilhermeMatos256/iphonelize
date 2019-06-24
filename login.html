@@ -20,10 +20,12 @@
     <script src="assets/libraries/materialize/js/materialize.js"></script>
     <!--JS-->
     <script src="assets/resources/scripts/main.js"></script>
+    <script src="assets/resources/scripts/login.js"></script>
+
 
 
     <script>
-        $(function() {
+        $(function () {
             $("#footer").load("footer.html");
             $("#menu").load("nav.html");
             $("#mobile").load("nav-cell.html");
@@ -39,7 +41,29 @@
     <ul class="sidenav" id="mobile"></ul>
     <!--CONTEUDO-->
 
+    <main class="container">
+        <form action="" class="col s12 m6 l6" id="form-login">
+            <div class="row">
+                <div class="col s12 l12">
+                    <label for="">Email:</label>
+                    <input type="text" id="input-email" class="validate"
+                        pattern="^(\w+\.)?\w+@\w+\.(\w+\.)?\w{3}(\.\w{2})?" required>
+                </div>
+                <div class="col s12 l12">
+                    <label for="">Senha:</label>
+                    <input id="input-password" type="password" class="validate" required>
+                </div>
+            </div>
+            <div class="col center">
+                <button class="col waves-effect waves-light btn-large black" type="submit">Entrar</button>
+            </div>
+        </form>
+
+    </main>
+
     <!--RODAPÉ-->
     <div id="footer" class="black"></div>
 
-</body></html>
+</body>
+
+</html>

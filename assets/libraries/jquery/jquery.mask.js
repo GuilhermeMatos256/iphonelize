@@ -401,7 +401,7 @@
             return this.each(function() {
                 $(this).data('mask').remove().removeData('mask');
             });
-        } catch(e) {};
+        } catch(e) {}
     };
 
     $.fn.cleanVal = function() {

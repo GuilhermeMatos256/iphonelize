@@ -1,13 +1,17 @@
 (function () {
     'use strict';
+    //falta colocar mensagens customizadas de erro, conferir as senhas e afins
+    $('#input-cpf').mask('000.000.000-00');
+    $('#input-cep').mask('00000-000');
+    $('#input-telefone').mask('(00) 00000-0000');
 
     let dataAtual = new Date();
 
-    let dataAtualStr = function(){
-        return dataAtual.getFullYear() + '/' + dataAtual.getMonth() + '/' + dataAtual.getDay();
+    let dataAtualStr = function () {
+        return dataAtual.getFullYear() + '-' + dataAtual.getMonth() + '-' + dataAtual.getDay();
     };
 
-    let $$ = function(id){
+    let $$ = function (id) {
         return document.getElementById(id);
     };
 
@@ -46,9 +50,11 @@
         };
     };
 
-    let usuarios = [];
+    let usuarios;
     if (localStorage.getItem('usuarios')) {
         usuarios = JSON.parse(localStorage.getItem('usuarios'));
+    } else {
+        usuarios = [];
     }
 
     function update(novoUsuario) {
@@ -59,36 +65,32 @@
         console.log(usuarios);
     }
 
-    let getGenero = function(genero){
-        console.log(genero);
-        return 'Masculino';
-    };
-
-    $$('form-cadastro').onsubmit = function(event){
+    $$('form-cadastro').onsubmit = function (event) {
         event.preventDefault();
 
         let tipo = 'cliente';
-        let nome = $('#input-nome').val();
+        let nome = $$('input-nome').value;
         let sobrenome = $('#input-sobrenome').val();
         let dataNascimento = $('#input-data').val();
-        let genero = getGenero($('#radio-genero').val());
-        let email = $('#input-genero').val();
+        let genero = $('input[name="genero"]:checked +span').text();
+        let email = $('#input-email').val();
         let senha = $('#input-senha').val();
-        let cpf = $('input-cpf').val();
-        let numeroTel = $('input-telefone').val();
-        let cep = $('input-cep').val();
-        let estado = $('input-estado').val();
-        let cidade = $('input-cidade').val();
-        let bairro = $('input-bairro').val();
-        let rua = $('input-rua').val();
-        let numero = $('input-numero').val();
+        let cpf = $('#input-cpf').val();
+        let numeroTel = $('#input-telefone').val();
+        let cep = $('#input-cep').val();
+        let estado = $('#input-estado').val();
+        let cidade = $('#input-cidade').val();
+        let bairro = $('#input-bairro').val();
+        let rua = $('#input-rua').val();
+        let numero = $('#input-numero').val();
 
         let novoUsuario = new Usuario(usuarios.length, tipo, dataAtualStr(), nome, sobrenome,
-         dataNascimento, genero, email, senha, cpf, numeroTel, cep, estado, cidade, bairro,
-          rua, numero);
+            dataNascimento, genero, email, senha, cpf, numeroTel, cep, estado, cidade, bairro,
+            rua, numero);
 
         update(novoUsuario);
-
+        window.alert('Cadastro efetuado com sucesso!!');
+        window.location.href = '../../login.html';
     };
 
 })();
