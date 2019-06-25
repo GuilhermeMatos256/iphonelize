@@ -12,10 +12,10 @@
         //$('.collapsible').collapsible();
 
 
-        if(typeof (localStorage) === undefined){
+        if (typeof (localStorage) === undefined) {
             window.alert('Seu navegador não suporta localStorage');
         }
-        if(typeof (sessionStorage) === undefined){
+        if (typeof (sessionStorage) === undefined) {
             window.alert('Seu navegador não suporta sessionStorage');
         }
     });
