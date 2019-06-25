@@ -6,16 +6,20 @@
     'use strict';
 
     $(document).ready(function () {
-        $('select').formSelect();
+        $("#footer").load("footer.html");
+        $("#menu").load("nav.html");
+        $("#mobile").load("nav-cell.html");
         $('.sidenav').sidenav();
+        $('.dropdown-trigger').dropdown();
+        $('select').formSelect();
         $('.datepicker').datepicker();
         //$('.collapsible').collapsible();
 
 
-        if(typeof (localStorage) === undefined){
+        if (typeof (localStorage) === undefined) {
             window.alert('Seu navegador não suporta localStorage');
         }
-        if(typeof (sessionStorage) === undefined){
+        if (typeof (sessionStorage) === undefined) {
             window.alert('Seu navegador não suporta sessionStorage');
         }
     });
