@@ -21,14 +21,6 @@
     <!--JS-->
     <script src="assets/resources/scripts/main.js"></script>
 
-
-    <script>
-        $(function() {
-            $("#footer").load("footer.html");
-            $("#menu").load("nav.html");
-            $("#mobile").load("nav-cell.html");
-        });
-    </script>
 </head>
 
 
@@ -41,7 +33,9 @@
     <main class="container">
         <h1 class="center">Nome Produto</h 1>
             <div class="row">
-                <a class="col s1 m1 l1" id="back"><i class="material-icons">arrow_back</i></a>
+                <a class="col s1 m1 l1 btn-large btn-floating black" id="back">
+                    <i class="material-icons">arrow_back</i>
+                </a>
                 <div class="col s10 m10 l10 slider">
                     <ul class="slides">
                         <li>
@@ -75,7 +69,9 @@
                         </li>
                     </ul>
                 </div>
-                <a class="col s1 m1 l1" id="forward"><i class="material-icons">arrow_forward</i></a>
+                <a class="col s1 m1 l1" id="forward">
+                    <i class="material-icons">arrow_forward</i>
+                </a>
             </div>
 
     </main>
@@ -83,4 +79,6 @@
     <!--RODAPÉ-->
     <div id="footer" class="black"></div>
 
-</body></html>
+</body>
+
+</html>
