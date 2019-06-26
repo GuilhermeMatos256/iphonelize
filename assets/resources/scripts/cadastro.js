@@ -93,4 +93,34 @@
         window.location.href = '../../login.html';
     };
 
+
+    let inputNome = $$('input-nome');
+    let inputSobrenome = $$('input-sobrenome');
+
+    inputNome.addEventListener('invalid', function () {
+        if (inputNome.validity.patternMismatch) {
+            this.setCustomValidity('Nome Invalido!, Favor Digitar um nome valido.');
+        } else if (inputNome.validity.valueMissing) {
+            this.setCustomValidity('Favor Digitar seu nome.');
+        } else {
+            this.setCustomValidity('');
+        }
+
+    });
+
+    inputSobrenome.oninvalid = function () {
+        console.log('foi');
+        if (inputSobrenome.validity.patternMismatch) {
+            this.setCustomValidity('Sobrenome Invalido!, Favor Digitar um Sobrenome Valido.');
+        } else {
+            this.setCustomValidity('');
+        }
+
+        if (inputSobrenome.validity.valueMissing) {
+            this.setCustomValidity('Favor Digitar seu Sobrenome.');
+        } else {
+            this.setCustomValidity('');
+        }
+    };
+
 })();
