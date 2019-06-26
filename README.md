@@ -36,7 +36,7 @@ Eventos
 - [ ] Imprimir alguma propriedade do objeto event recebido como parâmetro 
 
 Acesso aos elementos DOM do HTML
-- [ ] Via referência DOM pelo id do elemento HTML
+- [ ] Via referência DOM pelo id do elemento HTML ?
 - [x] Via getElementByID()
 - [ ] Via getElementsByName()
 - [ ] Via getElementsByTagName()
