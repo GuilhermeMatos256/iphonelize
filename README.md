@@ -25,7 +25,7 @@ Funções
 - [ ] Função auto-executável
 - [x] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
-- [ ] Passagem de uma função como parâmetro
+- [x] Passagem de uma função como parâmetro
 - [x] Função Flecha - Arrow Function
 
 Eventos
@@ -40,7 +40,7 @@ Acesso aos elementos DOM do HTML
 - [x] Via getElementByID()
 - [ ] Via getElementsByName()
 - [ ] Via getElementsByTagName()
-- [ ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
+- [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
 - [x] Especificar o tratador de evento inline
