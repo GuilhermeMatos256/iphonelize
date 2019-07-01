@@ -9,7 +9,7 @@
 
     <!--Import Google Icon Font-->
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5c1e566022.js"></script>
 
     <!--stilos css-->
     <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
@@ -31,58 +31,96 @@
     <ul class="sidenav" id="mobile"></ul>
     <!--CONTEUDO-->
     <main class="container">
-        <h1 class="center">Nome Produto</h 1>
-            <div class="row">
-                <div class="col s1 m1 l1">
-                    <button class="btn-floating btn-small black" id="back-slider">
-                        <i class="material-icons">arrow_back</i>
-                    </button>
-                </div>
-                <div class="col s10 m10 l10 slider">
-                    <ul class="slides">
-                        <li>
-                            <img src="assets/resources/images/capa.jpg"> <!-- random image -->
-                            <div class="caption center-align">
-                                <h3>This is our big Tagline!</h3>
-                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="assets/resources/images/iphone.png"> <!-- random image -->
-                            <div class="caption left-align">
-                                <h3>Left Aligned Caption</h3>
-                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="assets/resources/images/capa.jpg">
-                            <!-- random image -->
-                            <div class="caption right-align">
-                                <h3>Right Aligned Caption</h3>
-                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="assets/resources/images/iphone.png"> <!-- random image -->
-                            <div class="caption center-align">
-                                <h3>This is our big Tagline!</h3>
-                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col s1 m1 l1">
-                    <button class="btn-floating btn-samll black" id="next-slider">
-                        <i class="material-icons">arrow_forward</i>
-                    </button>
+        <h1 class="center">Nome Produto</h1>
+        <div class="row">
+            <div class="col s1 m1 l1">
+                <button class="btn-floating btn-large black" id="back-slider">
+                    <i class="fas fa-arrow-circle-left"></i>
+                </button>
+            </div>
+            <div class="col s10 m10 l10 slider">
+                <ul class="slides">
+                    <li>
+                        <img src="assets/resources/images/capa.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/resources/images/iphone.png"> <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Left Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/resources/images/capa.jpg">
+                        <!-- random image -->
+                        <div class="caption right-align">
+                            <h3>Right Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/resources/images/iphone.png"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s1 m1 l1">
+                <button class="btn-floating btn-large black" id="next-slider">
+                    <i class="material-icons">arrow_forward</i>
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l6">
+                <label for="">PREÇO:</label>
+                <p id="preco-produto">
+                    R$ 999,99
+                </p>
+            </div>
+            <div class="col s12 l6">
+                <label for="">QUANTIDADE:</label>
+                <input type="number" id="quantidade" min="0" max="5" required>
+            </div>
+            <div class="col s12 l6">
+                <label>FRETE:</label>
+                <p id="preco-frete">R$ 20,00</p>
+            </div>
+            <div class="col s12 l6">
+                <label for="">CEP:</label>
+                <input id="input-cep" max="\d{5}-\d{3}" required>
+            </div>
+
+            <div class="col s12 l12">
+                <div class="center">
+                    <h5>Valor Total: </h5>
+                    <h5 id="preco-total">R$ 1.019,99</h5>
                 </div>
             </div>
+        </div>`
+        <div>
+            <div class="col s12 l6">
+                <div class="row">
+                    <div class="col s12 l6">
+                        <button class="waves-effect waves-light btn-large grey darken-3 right" type=" submit"><i class="fas fa-dollar-sign"></i> COMPRAR AGORA</button>
+                    </div>
+                    <div class="col s12 l6">
+                        <button class="waves-effect waves-light btn-large grey darken-3" type=" submit"><i class="fas fa-cart-plus"></i> ADD AO CARRINHO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
     <!--RODAPÉ-->
     <div id="footer" class="black"></div>
 
-</body>
-
-</html>
+</body></html>
