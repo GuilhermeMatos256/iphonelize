@@ -21,14 +21,6 @@
     <!--JS-->
     <script src="assets/resources/scripts/main.js"></script>
 
-
-    <script>
-        $(function() {
-            $("#footer").load("footer.html");
-            $("#menu").load("nav.html");
-            $("#mobile").load("nav-cell.html");
-        });
-    </script>
 </head>
 
 
@@ -38,7 +30,54 @@
     <!--MENU CELULAR-->
     <ul class="sidenav" id="mobile"></ul>
     <!--CONTEUDO-->
-
+    <nav class="black">
+        <div class="container nav-wrapper">
+            <form>
+                <div class="input-field grey  darken-3">
+                    <input id="search" type="search" value="Pesquise Aqui!" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <main class="container">
+        <div>
+            <h3 class="center">PESQUISA</h3>
+        </div>
+        <div class="row">
+            <div class="col s12 l12">
+                <div class="card horizontal">
+                    <div class="card-image col s3 l3">
+                        <img src="assets/resources/images/iphone.png">
+                    </div>
+                    <div class="card-stacked col s9 l9">
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="item.html" class="btn black col s12 l12">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l12">
+                <div class="card horizontal">
+                    <div class="card-image col s3 l3">
+                        <img src="assets/resources/images/iphone.png">
+                    </div>
+                    <div class="card-stacked col s9 l9">
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="item.html" class="btn black col s12 l12">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!--RODAPÉ-->
     <div id="footer" class="black"></div>
 

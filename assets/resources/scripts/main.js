@@ -13,6 +13,16 @@
         $('.dropdown-trigger').dropdown();
         $('select').formSelect();
         $('.datepicker').datepicker();
+        $('.slider').slider({
+            indicators: false
+        });
+        $("#back-slider").click(function () {
+            $('.slider').slider('prev');
+        });
+        $("#next-slider").click(function () {
+            $('.slider').slider('next');
+        });
+
         //$('.collapsible').collapsible();
 
 

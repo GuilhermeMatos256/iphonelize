@@ -25,22 +25,22 @@ Funções
 - [ ] Função auto-executável
 - [x] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
-- [ ] Passagem de uma função como parâmetro
+- [x] Passagem de uma função como parâmetro
 - [x] Função Flecha - Arrow Function
 
 Eventos
 - [x] Evento de carregamento do documento - onload
 - [ ] Evento de movimento do mouse
 - [ ] Evento de teclado - usar charCode ou keyCode
-- [ ] Eventos de formulário - onfocus e onblur
+- [x] Eventos de formulário - onfocus e onblur
 - [ ] Imprimir alguma propriedade do objeto event recebido como parâmetro 
 
 Acesso aos elementos DOM do HTML
-- [ ] Via referência DOM pelo id do elemento HTML
+- [ ] Via referência DOM pelo id do elemento HTML ?
 - [x] Via getElementByID()
-- [ ] Via getElementsByName()
+- [x] Via getElementsByName()
 - [ ] Via getElementsByTagName()
-- [ ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
+- [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
 - [x] Especificar o tratador de evento inline

@@ -22,15 +22,6 @@
     <script src="assets/resources/scripts/main.js"></script>
     <script src="assets/resources/scripts/login.js"></script>
 
-
-
-    <script>
-        $(function () {
-            $("#footer").load("footer.html");
-            $("#menu").load("nav.html");
-            $("#mobile").load("nav-cell.html");
-        });
-    </script>
 </head>
 
 
@@ -62,29 +53,27 @@
         </form>
 
         <div>
-                <h1 class="center">Cadastro de Produto</h1>
+            <h1 class="center">Cadastro de Produto</h1>
+        </div>
+        <form action="" class="col s12 m6 l6" id="form-categoria">
+            <div class="row">
+                <div class="col s12 l12">
+                    <label for="">Nome da Categoria</label>
+                    <input type="text" id="input-nome" class="validate" required>
+                </div>
+                <div class="col s12 l12">
+                    <label for="">Descrição</label>
+                    <input type="text" id="input-nome" class="validate" required>
+                </div>
             </div>
-            <form action="" class="col s12 m6 l6" id="form-categoria">
-                <div class="row">
-                    <div class="col s12 l12">
-                        <label for="">Nome da Categoria</label>
-                        <input type="text" id="input-nome" class="validate" required>
-                    </div>
-                    <div class="col s12 l12">
-                        <label for="">Descrição</label>
-                        <input type="text" id="input-nome" class="validate" required>
-                    </div>
-                </div>
-                <div class="col center">
-                    <button class="col waves-effect waves-light btn-large black" type="submit">Entrar</button>
-                </div>
-            </form>
+            <div class="col center">
+                <button class="col waves-effect waves-light btn-large black" type="submit">Entrar</button>
+            </div>
+        </form>
 
     </main>
 
     <!--RODAPÉ-->
     <div id="footer" class="black"></div>
 
-</body>
-
-</html>
+</body></html>
