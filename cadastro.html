@@ -49,19 +49,18 @@
                 </div>
                 <div class="col s12 l6">
                     <label for="">Sobrenome:</label>
-                    <input id="input-sobrenome" type="text" class="validate";
+                    <input id="input-sobrenome" type="text" class="validate"
                         pattern="^[A-Z][a-zà-ú]{2,}(\s((d[aeiou])|([A-Z][a-zà-ú]{1,})))*$" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Data de nascimento</label>
-                    <input id="input-data" type="date" min="1900-01-01" max="2010-12-31" class="validate"
-                        required>
+                    <input id="input-data" type="date" min="1900-01-01" max="2010-12-31" class="validate" required>
                 </div>
                 <div class="col s12 l6">
                     <div><label for="">Genero:</label>
-                        <div id="radio-genero" required>
+                        <div id="radio-genero">
                             <label>
-                                <input class="with-gap black" name="genero" type="radio" />
+                                <input class="with-gap black"  name="genero" type="radio" required />
                                 <span>Masculino</span>
                             </label>
                             <label>
@@ -146,8 +145,6 @@
                     <label for="">Numero</label>
                     <input id="input-numero" type="number" required>
                 </div>
-
-
 
             </div>
             <div class="col center">

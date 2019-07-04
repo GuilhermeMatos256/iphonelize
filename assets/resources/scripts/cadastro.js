@@ -96,6 +96,9 @@
 
     let inputNome = $$('input-nome');
     let inputSobrenome = $$('input-sobrenome');
+    let inputData = document.querySelector('#input-data');
+    let inputGenero = document.getElementsByName('genero');
+
 
     inputNome.addEventListener('invalid', function () {
         if (inputNome.validity.patternMismatch) {
@@ -108,19 +111,32 @@
 
     });
 
-    inputSobrenome.oninvalid = function () {
-        console.log('foi');
+    inputSobrenome.onblur = function () {
         if (inputSobrenome.validity.patternMismatch) {
-            this.setCustomValidity('Sobrenome Invalido!, Favor Digitar um Sobrenome Valido.');
-        } else {
-            this.setCustomValidity('');
-        }
-
-        if (inputSobrenome.validity.valueMissing) {
+            this.setCustomValidity('Sobrenome Invalido!, Favor Digitar um nome valido.');
+        } else if (inputSobrenome.validity.valueMissing) {
             this.setCustomValidity('Favor Digitar seu Sobrenome.');
         } else {
             this.setCustomValidity('');
         }
     };
 
+    function validacaoData() { // mostra o erro caso a funça seja declarada depois de ser usada
+        if (inputData.validity.rangeOverflow) {
+            inputData.setCustomValidity('Você não possui a idade minima!');
+        } else if (inputData.validity.valueMissing) {
+            inputData.setCustomValidity('Por favor informe sua data de nascimento');
+        } else {
+            inputData.setCustomValidity('');
+        }
+    }
+    inputData.addEventListener('invalid', validacaoData); // informa se a função foi declarada
+
+    inputGenero[0].addEventListener('invalid', function () {
+        if (this.validity.valueMissing) {
+            inputGenero[0].setCustomValidity('Por favor informe seu genero');
+        }else{
+            inputGenero[0].setCustomValidity('');
+        }
+    });
 })();
