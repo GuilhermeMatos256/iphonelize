@@ -31,7 +31,7 @@ Funções
 Eventos
 - [x] Evento de carregamento do documento - onload
 - [ ] Evento de movimento do mouse
-- [ ] Evento de teclado - usar charCode ou keyCode
+- [x] Evento de teclado - usar charCode ou keyCode
 - [x] Eventos de formulário - onfocus e onblur
 - [x] Imprimir alguma propriedade do objeto event recebido como parâmetro 
 
@@ -51,7 +51,7 @@ Tratadores de Evento
 Formulário
 - [ ] Validação de formulário com onsubmit usando os métodos tradicionais
 - [x] Validação de formulário com HTML5 API
-- [ ] * Customizar as mensagens nos balões de mensagem
+- [x] * Customizar as mensagens nos balões de mensagem
 - [x] * Usar os atributos de validação dos inputs
 - [x] * Usar expressões regulares
 - [x] Ler e escrever em elementos input com a propriedade value ?
@@ -74,8 +74,8 @@ jQuery
 - [x] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo ?
 - [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
 - [ ] Efeitos fade ou slide
-- [ ] Especificar o tratador de algum evento via jQuery
-- [ ] Manipulação do CSS via função css() e addClass()/removeClass()
+- [x] Especificar o tratador de algum evento via jQuery
+- [x] Manipulação do CSS via função css() e addClass()/removeClass() 1/2
 - [x] Manipulação do conteúdo de um input e div usando jQuery ?
 - [x] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
 
