@@ -6,9 +6,9 @@
     'use strict';
 
     $(document).ready(function () {
-        $("#footer").load("footer.html");
-        $("#menu").load("nav.html");
-        $("#mobile").load("nav-cell.html");
+        $('#footer').load('footer.html');
+        $('#menu').load('nav.html');
+        $('#mobile').load('nav-cell.html');
         $('.sidenav').sidenav();
         $('.dropdown-trigger').dropdown();
         $('select').formSelect();
@@ -16,10 +16,10 @@
         $('.slider').slider({
             indicators: false
         });
-        $("#back-slider").click(function () {
+        $('#back-slider').click(function () {
             $('.slider').slider('prev');
         });
-        $("#next-slider").click(function () {
+        $('#next-slider').click(function () {
             $('.slider').slider('next');
         });
 

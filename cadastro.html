@@ -65,27 +65,34 @@
                 </div>
                 <div class="col s12 l12">
                     <label for="">E-mail:</label>
-                    <input id="input-email" type="email" pattern="^(\w+\.)?\w+@\w+\.(\w+\.)?\w{3}(\.\w{2})?" required>
+                    <input id="inputEmail" type="email" class="validate" pattern="^(\w+\.)?\w+@\w+\.(\w+\.)?\w{3}(\.\w{2})?" required>
                 </div>
                 <div class="col s12 l12">
                     <label for="">Senha:</label>
-                    <input id="input-senha" type="password" min="8" max="50" required>
+                    <input id="input-senha" class="validate" type="password" pattern=".{8,50}" required>
+                </div>
+                <div class = "col s12 l12">
+                    <div class="card-panel red hide" id="card-senha">
+                        <span class="white-text">
+                            As Senhas Precisam ser Iguais!
+                        </span>
+                      </div>
                 </div>
                 <div class="col s12 l12">
                     <label for="">Confirme sua senha:</label>
-                    <input id="input-confirm-senha" type="password" min="8" max="50" required>
+                    <input id="input-confirm-senha" class="validate" type="password" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">CPF:</label>
-                    <input id="input-cpf" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" required>
+                    <input id="input-cpf" class ="validate" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Numero de Telefone:</label>
-                    <input id="input-telefone" pattern="^\(\d{2}\)\s\d{5}-\d{4}$" required>
+                    <input id="input-telefone" class="validate" pattern="^\(\d{2}\)\s\d{5}-\d{4}$" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">CEP:</label>
-                    <input id="input-cep" max="\d{5}-\d{3}" required>
+                    <input id="input-cep" class="validate" pattern="\d{5}-\d{3}" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Estado:</label>
@@ -123,24 +130,24 @@
                 </div>
                 <div class="col s12 l6">
                     <label for="">Cidade:</label>
-                    <input id="input-cidade" type="text" required>
+                    <input id="input-cidade" type="text" class="validate" pattern="[A-ZÀ-Úa-zà-ú]{2,}" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Bairro:</label>
-                    <input id="input-bairro" type="text" required>
+                    <input id="input-bairro" type="text" class="validate" pattern="[A-ZÀ-Úa-zà-ú]{2,}" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Rua:</label>
-                    <input id="input-rua" type="text" required>
+                    <input id="input-rua" type="text" class="validate" pattern="[A-ZÀ-Úa-zà-ú]{2,}" required>
                 </div>
                 <div class="col s12 l6">
                     <label for="">Numero</label>
-                    <input id="input-numero" type="number" required>
+                    <input id="input-numero" class="validate" type="number" pattern="\d+" required>
                 </div>
 
             </div>
             <div class="center">
-                <button class="waves-effect waves-light btn-large grey darken-3" type="submit">Cadastrar-se</button>
+                <button class="waves-effect waves-light btn-large black" type="submit">Cadastrar-se</button>
             </div>
         </form>
 

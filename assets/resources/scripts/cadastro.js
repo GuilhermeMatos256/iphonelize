@@ -65,15 +65,38 @@
         console.log(usuarios);
     }
 
+    let inputSenha = $('#input-senha');
+    let inputConfirmSenha = $('#input-confirm-senha');
+
+    let verificaConfirm = function () {
+        if (inputSenha.val()) {
+            if (inputConfirmSenha.val() !== inputSenha.val()) {
+                $('#card-senha').removeClass('hide');
+                inputConfirmSenha.addClass('invalid');
+                inputConfirmSenha.removeClass('valid');
+                return false;
+            } else {
+                $('#card-senha').addClass('hide');
+                inputConfirmSenha.removeClass('invalid');
+                return true;
+            }
+        }
+    };
+
+
     $$('form-cadastro').onsubmit = function (event) {
         event.preventDefault();
+        if (verificaConfirm() === false) {
+            inputConfirmSenha.focus();
+            return false;
+        }
 
         let tipo = 'cliente';
         let nome = $$('input-nome').value;
         let sobrenome = $('#input-sobrenome').val();
         let dataNascimento = $('#input-data').val();
         let genero = $('input[name="genero"]:checked +span').text();
-        let email = $('#input-email').val();
+        let email = $('#inputEmail').val();
         let senha = $('#input-senha').val();
         let cpf = $('#input-cpf').val();
         let numeroTel = $('#input-telefone').val();
@@ -98,6 +121,13 @@
     let inputSobrenome = $$('input-sobrenome');
     let inputData = document.querySelector('#input-data');
     let inputGenero = document.getElementsByName('genero');
+    let inputCpf = $('#input-cpf');
+    let inputTelefone = $('#input-telefone');
+    let inputCep = $('#input-cep');
+    let inputCidade = $('#input-cidade');
+    let inputBairro = $('#input-bairro');
+    let inputRua = $('#input-rua');
+    let inputNumero = $('#input-numero');
 
 
     inputNome.addEventListener('invalid', function () {
@@ -135,8 +165,128 @@
     inputGenero[0].addEventListener('invalid', function () {
         if (this.validity.valueMissing) {
             inputGenero[0].setCustomValidity('Por favor informe seu genero');
-        }else{
+        } else {
             inputGenero[0].setCustomValidity('');
+        }
+    });
+
+    document.forms[0].inputEmail.oninvalid = function (event) {
+        console.log('evento do tipo: ' + event.type);
+        if (this.validity.patternMismatch) {
+            this.setCustomValidity('Email Invalido!, Favor Digitar um Email valido.');
+        } else if (this.validity.valueMissing) {
+            this.setCustomValidity('Favor Digitar seu Email.');
+        } else {
+            this.setCustomValidity('');
+        }
+    };
+
+    inputSenha.on('invalid', function () {
+        if (this.validity.patternMismatch) {
+            this.setCustomValidity('Senha Muito Curta, Favor Digitar uma Maior.');
+        } else if (this.validity.valueMissing) {
+            this.setCustomValidity('Favor Digitar uma Senha');
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+
+    inputConfirmSenha.on('keyup', function () {
+        verificaConfirm();
+    });
+    inputConfirmSenha.on('blur', function () {
+        verificaConfirm();
+    });
+    inputConfirmSenha.on('invalid', function (e) {
+        e.preventDefault();
+    });
+
+    inputCpf.on('invalid', function () {
+        if (this.validity.patternMismatch) {
+            inputCpf.addClass('invalid');
+            inputCpf.removeClass('valid');
+            this.setCustomValidity('CPF Invalido!, Favor Digitar um CPF valido.');
+        } else if (this.validity.valueMissing) {
+            inputCpf.addClass('invalid');
+            inputCpf.removeClass('valid');
+            this.setCustomValidity('Favor Digitar seu CPF.');
+        } else {
+            inputCpf.removeClass('invalid');
+            inputCpf.addClass('valid');
+            this.setCustomValidity('');
+        }
+    });
+
+    inputTelefone.on('invalid', function () {
+        if (this.validity.patternMismatch) {
+            inputTelefone.addClass('invalid');
+            inputTelefone.removeClass('valid');
+            this.setCustomValidity('Numero de Telefone Invalido!, ' +
+                'Favor Digitar um Numero de Telefone Valido.');
+        } else if (this.validity.valueMissing) {
+            inputTelefone.addClass('invalid');
+            inputTelefone.removeClass('valid');
+            this.setCustomValidity('Favor Digitar seu Numero de Telefone.');
+        } else {
+            inputTelefone.removeClass('invalid');
+            inputTelefone.addClass('valid');
+            this.setCustomValidity('');
+        }
+    });
+
+    inputCep.on('invalid', function () {
+        if (this.validity.patternMismatch) {
+            inputCep.addClass('invalid');
+            inputCep.removeClass('valid');
+            this.setCustomValidity('CEP Invalido! Favor Digitar um CEP Valido');
+        } else if (this.validity.valueMissing) {
+            inputCep.addClass('invalid');
+            inputCep.removeClass('valid');
+            this.setCustomValidity('Favor Digitar seu CEP.');
+        } else {
+            inputCep.removeClass('invalid');
+            inputCep.addClass('valid');
+            this.setCustomValidity('');
+        }
+    });
+
+    inputCidade.on('invalid', function () {
+        if (this.validity.patternMismatch) {
+            this.setCustomValidity('Nome de Cidade Invalida, Favor Digitar Novamente');
+        } else if (this.validity.valueMissing) {
+            this.setCustomValidity('Favor Digitar sua Cidade.');
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+
+    inputBairro.on('invalid', function () {
+        if (this.validity.patternMismatch) {
+            this.setCustomValidity('Nome de Bairro Invalido, Favor Digitar Novamente');
+        } else if (this.validity.valueMissing) {
+            this.setCustomValidity('Favor Digitar seu Bairro.');
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+
+    inputRua.on('invalid', function () {
+        if (this.validity.patternMismatch) {
+            this.setCustomValidity('Nome de Rua Invalida, Favor Digitar Novamente');
+        } else if (this.validity.valueMissing) {
+            this.setCustomValidity('Favor Digitar sua Rua.');
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+
+    inputNumero.on('invalid', function(){
+        if (this.validity.patternMismatch) {
+            this.setCustomValidity('Numero Invalido, Favor Digitar Novamente');
+        } else if (this.validity.valueMissing) {
+            this.setCustomValidity('Favor Digitar o Numero da sua Residencia.');
+        } else {
+            this.setCustomValidity('');
         }
     });
 })();
