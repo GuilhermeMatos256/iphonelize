@@ -10,7 +10,7 @@ Qualidade do código
 - [x] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
 
 Caixas de Diálogo
-- [ ] prompt
+- [x] prompt
 - [x] alert
 - [ ] confirm
 
