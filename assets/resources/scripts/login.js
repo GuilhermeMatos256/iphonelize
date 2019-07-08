@@ -12,7 +12,7 @@
         (function (){
             if(localStorage.idUsuario){
                 window.alert('Você ja esta logado!');
-                window.location.href = '../redireciona-perfil.html';
+                window.location.href = '/iphonelize/redireciona-perfil.html';
             }
         })();
 
@@ -40,7 +40,7 @@
                 usuario = usuarios[id];
                 console.log(usuario);
                 window.alert('Login Efetuado com sucesso!!');
-                window.location.href = '../../perfil.html';
+                window.location.href = '/iphonelize/perfil.html';
             } else {
                 window.alert('Email ou senha incorreta!! favor tentar novamente');
                 $$('input-password').value = '';
