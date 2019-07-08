@@ -38,7 +38,7 @@
         function logoff(){
             if(window.confirm('Você tem certeza que deseja sair?')){
                 localStorage.removeItem('idUsuario');
-                window.location.href = '../redireciona-login.html';
+                window.location.href = '/redireciona-login.html';
             }
         }
 
