@@ -39,7 +39,7 @@ Acesso aos elementos DOM do HTML
 - [x] Via referência DOM pelo id do elemento HTML
 - [x] Via getElementByID()
 - [x] Via getElementsByName()
-- [ ] Via getElementsByTagName()
+- [x] Via getElementsByTagName()
 - [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
@@ -49,7 +49,7 @@ Tratadores de Evento
 - [x] Usar o operador this em funções tratadoras de eventos.
 
 Formulário
-- [ ] Validação de formulário com onsubmit usando os métodos tradicionais
+- [x] Validação de formulário com onsubmit usando os métodos tradicionais
 - [x] Validação de formulário com HTML5 API
 - [x] * Customizar as mensagens nos balões de mensagem
 - [x] * Usar os atributos de validação dos inputs
@@ -57,11 +57,11 @@ Formulário
 - [x] Ler e escrever em elementos input com a propriedade value ?
 - [ ] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 - [x] Manipulação de elemento de listagem, como checkbox, radio ou select
-- [ ] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
+- [x] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
 
 Objetos Nativos
 - [ ] Usar pelo menos 3 métodos de manipulação de array
-- [ ] Usar laço de repetição (for..in ou for..of ou forEach)
+- [x] Usar laço de repetição (for..in ou for..of ou forEach)
 - [ ] Usar pelo menos 3 métodos para manipulação de string
 
 Objetos
