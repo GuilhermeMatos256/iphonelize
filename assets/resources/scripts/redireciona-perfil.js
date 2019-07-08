@@ -8,7 +8,7 @@
         $('h3 >span').text(counter);
         if (counter < 1) {
             clearInterval(chave);
-            window.location.href = '/perfil.html';
+            window.location.href = '/iphonelize/perfil.html';
         }
     }
     chave = setInterval(redireciona, 1000);
