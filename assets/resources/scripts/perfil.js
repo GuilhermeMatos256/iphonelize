@@ -9,7 +9,7 @@
             usuario = usuarios[localStorage.idUsuario];
         } else {
             window.alert('Você precisa logar para acessar seu perfil!');
-            window.location.href = '../../login.html';
+            window.location.href = '../../redireciona-login.html';
         }
 
     }
@@ -18,7 +18,6 @@
 
     window.onload = function () {
         function showDados() {
-            console.log(usuario.nome);
             $('#nome-field').text(usuario.nome);
             $('#sobrenome-field').text(usuario.sobrenome);
             $('#email-field').text(usuario.email);
@@ -39,11 +38,10 @@
         function logoff(){
             if(window.confirm('Você tem certeza que deseja sair?')){
                 localStorage.removeItem('idUsuario');
-                window.location.href = '../../login.html';
+                window.location.href = '../../redireciona-login.html';
             }
         }
 
         $('#botao-sair').on('click',logoff);
-        console.log(usuario);
     };
 })();

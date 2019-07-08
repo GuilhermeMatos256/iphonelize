@@ -13,5 +13,10 @@
             <li class="divider"></li>
             `);
     }
+    $('#nav-pesquisa').hide();
+
+    $('#botao-pesquisa').on('click',function(){
+        $('#nav-pesquisa').slideToggle(500);
+    });
 
 })();
