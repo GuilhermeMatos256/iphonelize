@@ -1,4 +1,4 @@
-# iphonelize - Link : https://lojavirtualcursotsi.000webhostapp.com/index.html
+# iphonelize - Link : https://guilhermematos256.github.io/iphonelize/
 
 Qualidade do código
 - [x] Usar um Style Guide - apresentar o uso de pelo menos 10 regras do style escolhido (sugerido AirBnb)
