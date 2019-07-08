@@ -12,7 +12,7 @@
         (function (){
             if(localStorage.idUsuario){
                 window.alert('Você ja esta logado!');
-                window.location.href = '../../redireciona-perfil.html';
+                window.location.href = '../redireciona-perfil.html';
             }
         })();
 
