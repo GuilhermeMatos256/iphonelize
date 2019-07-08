@@ -61,8 +61,6 @@
         usuarios.push(novoUsuario);
         localStorage.qtdUsuarios = usuarios.length;
         localStorage.usuarios = JSON.stringify(usuarios);
-
-        console.log(usuarios);
     }
 
     let inputSenha = $('#input-senha');
@@ -151,7 +149,7 @@
         }
     };
 
-    function validacaoData() { // mostra o erro caso a funça seja declarada depois de ser usada
+    function validacaoData() {
         if (inputData.validity.rangeOverflow) {
             inputData.setCustomValidity('Você não possui a idade minima!');
         } else if (inputData.validity.valueMissing) {
@@ -160,7 +158,7 @@
             inputData.setCustomValidity('');
         }
     }
-    inputData.addEventListener('invalid', validacaoData); // informa se a função foi declarada
+    inputData.addEventListener('invalid', validacaoData); 
 
     inputGenero[0].addEventListener('invalid', function () {
         if (this.validity.valueMissing) {

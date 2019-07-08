@@ -35,7 +35,7 @@
             valor = produto.preco * $('#quantidade').val();
             document.getElementById('preco-produto').innerHTML = 'R$: ' + Number(valor).toFixed(2); 
             document.getElementById('preco-total').innerHTML = 'R$: ' + Number(valor+20).toFixed(2);
-            console.log('foi');
+
         });
 
         let imgs = [];
