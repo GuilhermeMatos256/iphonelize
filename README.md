@@ -72,7 +72,7 @@ Objetos
 jQuery
 - [x] Uso de seletores CSS - id, classe e tag ?
 - [x] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo ?
-- [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
+- [x] Uso de seletores hierárquicos dinâmicos - parent/children/next
 - [ ] Efeitos fade ou slide
 - [x] Especificar o tratador de algum evento via jQuery
 - [x] Manipulação do CSS via função css() e addClass()/removeClass() 1/2
