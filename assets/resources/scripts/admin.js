@@ -107,11 +107,11 @@
             }
         }
 
-        document.forms[0].onsubmit = function (event) {
+        document.forms[1].onsubmit = function (event) {
             event.preventDefault();
-
-            let inputNomeCategoria = document.forms[0].elements[0];
-            let inputDescricaoCategoria = document.forms[0].elements[1];
+            console.log('foi');
+            let inputNomeCategoria = document.forms[1].elements[0];
+            let inputDescricaoCategoria = document.forms[1].elements[1];
 
             if (validaInput(inputNomeCategoria) === false ||
                 validaInput(inputDescricaoCategoria) === false) {
@@ -129,9 +129,9 @@
             inputDescricaoCategoria.value = '';
         };
 
-        document.forms[1].onsubmit = function (event) {
+        document.forms[2].onsubmit = function (event) {
             event.preventDefault();
-
+            console.log('nao pohaaaaaa');
             let inputNomeProduto = $$('input-nome-produto');
             let selectCategoria = $('#select-categoria');
             let inputPreco = $$('input-preco');

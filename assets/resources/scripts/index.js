@@ -20,7 +20,7 @@
         let update = (function () {
 
             for(let ctg of categorias){
-                $('.container').append(`
+                $('#container').append(`
                 <section class="row" id="categoria-${ctg.idCategoria}">
                     <h3>${ctg.nome}</h3>
                 </section>
@@ -31,9 +31,10 @@
                 return $('#categoria-'+idCategoria);
             }
 
+
             let limit;
-            if(categorias.length < 4)
-                limit = categorias.length;
+            if(produtos.length < 4)
+                limit = produtos.length;
             else
                 limit = 4;
 
