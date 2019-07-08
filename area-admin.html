@@ -20,6 +20,7 @@
     <script src="assets/libraries/materialize/js/materialize.js"></script>
     <!--JS-->
     <script src="assets/resources/scripts/main.js"></script>
+    <script src="assets/resources/scripts/admin.js"></script>
 
 </head>
 
@@ -39,34 +40,60 @@
             <div class="row">
                 <div class="col s12 l12">
                     <label for="">Nome da Categoria</label>
-                    <input type="text" id="input-nome" class="validate" required>
+                    <input type="text" id="input-nome" class="validate">
                 </div>
                 <div class="col s12 l12">
                     <label for="">Descrição</label>
-                    <input type="text" id="input-nome" class="validate" required>
+                    <input type="text" id="input-descricao" class="validate">
                 </div>
             </div>
             <div class="col center">
-                <button class="col waves-effect waves-light btn-large black" type="submit">Entrar</button>
+                <button class="col waves-effect waves-light btn-large black" type="submit">Cadastrar</button>
             </div>
         </form>
 
         <div>
             <h1 class="center">Cadastro de Produto</h1>
         </div>
-        <form action="" class="col s12 m6 l6" id="form-categoria">
+        <form action="" class="col s12 m6 l6" id="form-produto">
             <div class="row">
-                <div class="col s12 l12">
-                    <label for="">Nome da Categoria</label>
-                    <input type="text" id="input-nome" class="validate" required>
+                <div class="col s12 m6 l6">
+                    <label for="">Nome do Produto</label>
+                    <input type="text" id="input-nome-produto" class="validate">
                 </div>
-                <div class="col s12 l12">
-                    <label for="">Descrição</label>
-                    <input type="text" id="input-nome" class="validate" required>
+                <div class="col s12 m6 l6">
+                    <label>Categoria</label>
+                    <select id="select-categoria" required>
+                        <option value="" disabled selected>Escolha uma Categoria</option>
+                    </select>
+                </div>
+                <div class="col s12 m6 l6">
+                    <label for="">Preço</label>
+                    <input type="text" id="input-preco" class="validate">
+                </div>
+                <div class="col s12 m6 l6">
+                    <label for="">Quantidade</label>
+                    <input type="number" id="input-quantidade" class="validate">
+                </div>
+                <div class="col s12">
+                    <label>Descrição</label>
+                    <textarea id="input-descricao-produto" class="materialize-textarea"></textarea>
+                </div>
+                <div class="col s12 m12 l12">
+                    <label for="">Url da Imagem 1</label>
+                    <input type="text" id="url-img-1" class="validate">
+                </div>
+                <div class="col s12 m12 l12">
+                    <label for="">Url da Imagem 2</label>
+                    <input type="text" id="url-img-2" class="validate">
+                </div>
+                <div class="col s12 m12 l12">
+                    <label for="">Url da Imagem 3</label>
+                    <input type="text" id="url-img-3" class="validate">
                 </div>
             </div>
             <div class="col center">
-                <button class="col waves-effect waves-light btn-large black" type="submit">Entrar</button>
+                <button class="col waves-effect waves-light btn-large black" type="submit">Cadastrar</button>
             </div>
         </form>
 
@@ -75,4 +102,6 @@
     <!--RODAPÉ-->
     <div id="footer" class="black"></div>
 
-</body></html>
+</body>
+
+</html>
