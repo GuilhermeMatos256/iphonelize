@@ -9,7 +9,7 @@
             usuario = usuarios[localStorage.idUsuario];
         } else {
             window.alert('Você precisa logar para acessar seu perfil!');
-            window.location.href = '../../redireciona-login.html';
+            window.location.href = '/iphonelize/redireciona-login.html';
         }
 
     }
