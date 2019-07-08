@@ -55,14 +55,14 @@ Formulário
 - [x] * Usar os atributos de validação dos inputs
 - [x] * Usar expressões regulares
 - [x] Ler e escrever em elementos input com a propriedade value ?
-- [ ] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
+- [x] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 - [x] Manipulação de elemento de listagem, como checkbox, radio ou select
 - [x] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
 
 Objetos Nativos
 - [ ] Usar pelo menos 3 métodos de manipulação de array
 - [x] Usar laço de repetição (for..in ou for..of ou forEach)
-- [ ] Usar pelo menos 3 métodos para manipulação de string
+- [x] Usar pelo menos 3 métodos para manipulação de string
 
 Objetos
 - [x] Criar objeto usando função construtora ou notação literal
@@ -72,7 +72,7 @@ Objetos
 jQuery
 - [x] Uso de seletores CSS - id, classe e tag ?
 - [x] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo ?
-- [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
+- [x] Uso de seletores hierárquicos dinâmicos - parent/children/next
 - [ ] Efeitos fade ou slide
 - [x] Especificar o tratador de algum evento via jQuery
 - [x] Manipulação do CSS via função css() e addClass()/removeClass() 1/2
