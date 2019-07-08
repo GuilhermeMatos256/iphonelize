@@ -12,11 +12,11 @@ Qualidade do código
 Caixas de Diálogo
 - [x] prompt
 - [x] alert
-- [ ] confirm
+- [x] confirm
 
 Temporizadores
-- [ ] setInterval
-- [ ] setTimeout
+- [x] setInterval
+- [x] setTimeout
 
 Funções
 - [x] Função anônima com argumento
