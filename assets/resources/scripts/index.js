@@ -49,7 +49,8 @@
                         <div>
                             <span id="preco-card">R$ ${produtos[i].preco}</span>
                         </div>
-                        <a href="item.html" class="waves-effect waves-light btn black col s12 l12">
+                        <a href="item.html?id=${produtos[i].idProduto}" 
+                        class="waves-effect waves-light btn black col s12 l12">
                         Detalhes
                         </a>
                     </div>

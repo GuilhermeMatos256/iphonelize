@@ -10,7 +10,6 @@
         $('#menu').load('nav.html');
         $('#mobile').load('nav-cell.html');
         $('.sidenav').sidenav();
-        $('.dropdown-trigger').dropdown();
         $('select').formSelect();
         $('.datepicker').datepicker();
         $('.slider').slider({

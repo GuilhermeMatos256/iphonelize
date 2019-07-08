@@ -20,6 +20,7 @@
     <script src="assets/libraries/materialize/js/materialize.js"></script>
     <!--JS-->
     <script src="assets/resources/scripts/main.js"></script>
+    <script src="assets/resources/scripts/item.js"></script>
 
 </head>
 
@@ -31,7 +32,7 @@
     <ul class="sidenav" id="mobile"></ul>
     <!--CONTEUDO-->
     <main class="container">
-        <h1 class="center">Nome Produto</h1>
+        <h1 class="center" id="nome-produto">Nome Produto</h1>
         <div class="row">
             <div class="col s1 m1 l1">
                 <button class="btn-floating btn-large black" id="back-slider">
@@ -42,32 +43,12 @@
                 <ul class="slides">
                     <li>
                         <img src="assets/resources/images/capa.jpg"> <!-- random image -->
-                        <div class="caption center-align">
-                            <h3>This is our big Tagline!</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                        </div>
                     </li>
                     <li>
                         <img src="assets/resources/images/iphone.png"> <!-- random image -->
-                        <div class="caption left-align">
-                            <h3>Left Aligned Caption</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                        </div>
                     </li>
                     <li>
                         <img src="assets/resources/images/capa.jpg">
-                        <!-- random image -->
-                        <div class="caption right-align">
-                            <h3>Right Aligned Caption</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="assets/resources/images/iphone.png"> <!-- random image -->
-                        <div class="caption center-align">
-                            <h3>This is our big Tagline!</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                        </div>
                     </li>
                 </ul>
             </div>
@@ -87,7 +68,7 @@
             </div>
             <div class="col s12 l6">
                 <label for="">QUANTIDADE:</label>
-                <input type="number" id="quantidade" min="0" max="5" required>
+                <input type="number" id="quantidade" value ="1" min="0" max="5" required>
             </div>
             <div class="col s12 l6">
                 <label>FRETE:</label>
